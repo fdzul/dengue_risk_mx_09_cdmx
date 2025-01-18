@@ -1,5 +1,5 @@
 ---
-title: "Programa de Prevención y Control del Dengue | 2024"
+title: "Programa de Prevención y Control del Dengue | 2025"
 format: 
   dashboard:
     nav-buttons: [twitter, github, facebook]
@@ -22,7 +22,7 @@ mapview::mapviewOptions(default = TRUE,
 ```{r casos_importadis}
 
 # Step 1. load the dengue sdm  ####
-x <- terra::rast("/Users/fdzul/Dropbox/posdoctorado_INSP/proyectos/risk_mzmv/11.output/pred_dengue.tif")
+x <- terra::rast("/Users/felipedzul/Dropbox/posdoctorado_INSP/proyectos/risk_mzmv/11.output/pred_dengue.tif")
 
 # Step 2. load the aoi and dataset final ####
 load("~/Dropbox/posdoctorado_INSP/proyectos/risk_mzmv/8.RData/results/ml_dengue/ml_dengue_cdmx.RData")
@@ -67,7 +67,7 @@ mapview::mapview(x,
 
 
 # Step 1. load the sdm aedes ####
-pred <- terra::rast("/Users/fdzul/Dropbox/posdoctorado_INSP/proyectos/risk_mzmv/11.output/pred_ae_aegypti.tif")
+pred <- terra::rast("/Users/felipedzul/Dropbox/posdoctorado_INSP/proyectos/risk_mzmv/11.output/pred_ae_aegypti.tif")
 
 # Step 2. load the aoi and dataset final ####
 load("~/Dropbox/posdoctorado_INSP/proyectos/risk_mzmv/8.RData/area_of_interes/aoi_aedes_thin.RData")
@@ -111,7 +111,7 @@ mapview::mapview(pred,
 
 ```{r escenarios}
 # Step 1. load the prediction ####
-x <- terra::rast("/Users/fdzul/Dropbox/posdoctorado_INSP/proyectos/risk_mzmv/11.output/pred_class_risk.tif")
+x <- terra::rast("/Users/felipedzul/Dropbox/posdoctorado_INSP/proyectos/risk_mzmv/11.output/pred_class_risk.tif")
 
 # Step 2. load aoi ####
 load("~/Dropbox/posdoctorado_INSP/proyectos/risk_mzmv/8.RData/area_of_interes/aoi.RData")
@@ -119,7 +119,7 @@ load("~/Dropbox/posdoctorado_INSP/proyectos/risk_mzmv/8.RData/area_of_interes/ao
 # step 3. load of the alcaldias ####
 
 # Step 3.1. load the pop total ciudad de mexico ####
-y <- vroom::vroom("/Users/fdzul/Dropbox/datasets/inegi/scince/Población total Ciudad de México - 09101 por municipio_demarcación territorial.csv")
+y <- vroom::vroom("/Users/felipedzul/Dropbox/dataset/inegi/scince/Población total Ciudad de México - 09101 por municipio_demarcación territorial.csv")
 
 # Step 3.2. load the minicipalities ####
 mun <- rgeomex::AGEM_inegi19_mx |>
