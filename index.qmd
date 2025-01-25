@@ -17,7 +17,7 @@ mapview::mapviewOptions(default = TRUE,
 
 ::: panel-tabset
 
-### [**Área Metropolitana de CDMX**]{style="color:#990000"}
+### [**Área Metropolitana de la Ciudad de México**]{style="color:#990000"}
 
 ```{r casos_importadis}
 
@@ -62,7 +62,7 @@ mapview::mapview(x,
 
 ::: panel-tabset
 
-### [**Área Metropolitana de CDMX**]{style="color:#990000"}
+### [**Área Metropolitana de Ciudad de México**]{style="color:#990000"}
 ```{r presencia_aedes}
 
 
@@ -106,7 +106,7 @@ mapview::mapview(pred,
 
 ::: panel-tabset
 
-### [**Área Metropolitana de CDMX**]{style="color:#990000"}
+### [**Área Metropolitana de la Ciudade de México**]{style="color:#990000"}
 
 
 ```{r escenarios}
